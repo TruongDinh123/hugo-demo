@@ -1,0 +1,35 @@
+baseURL = ''
+languageCode = 'en-us'
+title = '95IDEAL TECH'
+theme = 'tella'
+
+[params]
+    [params.logo]
+        main = "img/logo56x56.png"
+        alt = "Tella Logo"
+
+[Menus]
+[[Menus.main]]
+    name = 'News'
+    pageRef = '/blog'
+    weight = 10
+[[Menus.main]]
+    name = 'Teams'
+    pageRef = '/teams'
+    weight = 20
+[[Menus.main]]
+    name = 'Tours'
+    pageRef = '/tours'
+    weight = 30
+[[Menus.main]]
+    name = 'Events'
+    pageRef = '/events'
+    weight = 40
+[[Menus.main]]
+    name = 'Publications'
+    pageRef = '/categories/research/'
+    weight = 50  
+[[Menus.main]]
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 70
