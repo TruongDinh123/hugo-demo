@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://exquisite-ganache-9d1185.netlify.app'
 languageCode = 'en-us'
 title = '95IDEAL TECH'
 theme = 'tella'
