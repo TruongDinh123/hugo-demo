@@ -3,7 +3,7 @@ author = "Nguyễn Đặng Hiếu"
 title = "95IDEAL VÀ ECOMBEST"
 date = "2020-02-10"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-image = 'img/News/Ecombest.jpg'
+image = 'img/Ecombest.jpg'
 +++
 
 #### 95IDEAL VÀ Ecombest CHÍNH THỨC HỢP TÁC

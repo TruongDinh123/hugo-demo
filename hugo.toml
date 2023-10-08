@@ -5,8 +5,7 @@ theme = 'tella'
 
 [params]
     [params.logo]
-        main = "img/logo56x56.png"
-        alt = "Tella Logo"
+        main = "img/logodf.jpg"
 
 [Menus]
 [[Menus.main]]
@@ -15,19 +14,19 @@ theme = 'tella'
     weight = 10
 [[Menus.main]]
     name = 'Teams'
-    pageRef = '/teams'
+    pageRef = '/teams/'
     weight = 20
 [[Menus.main]]
     name = 'Tours'
-    pageRef = '/tours'
+    pageRef = '/tours/'
     weight = 30
 [[Menus.main]]
     name = 'Events'
-    pageRef = '/events'
+    pageRef = '/events/'
     weight = 40
 [[Menus.main]]
     name = 'Publications'
-    pageRef = '/categories/research/'
+    pageRef = '/publications/'
     weight = 50  
 [[Menus.main]]
     name = 'Contact'

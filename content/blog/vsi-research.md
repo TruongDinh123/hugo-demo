@@ -3,7 +3,7 @@ author = "Nguyễn Đặng Hiếu"
 title = "Nghiên cứu y tế"
 date = "2020-02-10"
 description = "Một trong những dự án nghiên cứu của tôi trong thời gian rảnh rỗi là phát triển một thuật toán để đọc các tệp .vsi"
-image = 'img/News/imgVSI_tebao.jpg'
+image = 'img/imgVSI_tebao.jpg'
 categories = ["research"]
 +++
 

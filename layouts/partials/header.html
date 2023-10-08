@@ -1,40 +1,68 @@
 <header>
-    <div id="overlay">
-        <ul class="text-center list-none text-white text-3xl">
-            {{ range .Site.Menus.main }}
-            <li class="p-2">
-                <a href="{{ .URL | safeURL }}">
-                    <span>{{ .Name }}</span>
-                </a>
-            </li>
-            {{ end }}
-        </ul>
+  <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    defer
+  ></script>
+  <div id="overlay">
+    <ul class="text-center list-none text-white text-3xl">
+      {{ range .Site.Menus.main }}
+      <li class="p-2">
+        <a href="{{ .URL | safeURL }}">
+          <span>{{ .Name }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
+    <div class="mb-2 sm:mb-0 flex flex-row">
+      <div class="h-16 w-24 self-center mr-2" href="{{ .Site.BaseURL }}">
+        <img
+          class="h-20 w-24 self-center"
+          style="width: 7rem;"
+          alt="{{ .Site.Params.logo.alt }}"
+          class="{{ .Site.Params.logo.size }} mr-3"
+          src="{{ .Site.Params.logo.main | relURL }}"
+        />
+      </div>
+      <div class="mt-4">
+        <a
+          href="/"
+          class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold"
+          >95IDeal</a
+        ><br />
+        <span class="text-xs text-grey-dark">Technology Solutions</span>
+      </div>
     </div>
-    <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
-        <div class="flex items-center flex-shrink-0 text-xl text-grey-900 mr-6">
-            <a href="{{ .Site.BaseURL }}"><img alt="{{ .Site.Params.logo.alt }}"
-                class="{{ .Site.Params.logo.size }} mr-3" src="{{ .Site.Params.logo.main | relURL }}">
-            </a>
-            95IDEAL TECH
-        </div>
-        <div class="block lg:hidden">
-            <div id="hamburgerbtn" class="flex cursor-pointer items-center w-14 h-10 py-2 rounded mopen">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
-        </div>
-        <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="mobileMenu">
-            <div class="text-lg lg:flex-grow">
-            </div>
-            <div class="text-lg">
-                {{ range .Site.Menus.main }}
-                <a href="{{ .URL | safeURL }}"
-                    class="duration-200 block mt-4 lg:inline-block lg:mt-0 text-black hover:opacity-60 mr-8">
-                    {{ .Name }}
-                </a>
-                {{ end }}
-            </div>
-        </div>
-    </nav>
+    <div class="block lg:hidden">
+      <div
+        id="hamburgerbtn"
+        class="flex cursor-pointer items-center w-14 h-10 py-2 rounded mopen"
+      >
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </div>
+    <div
+      class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+      id="mobileMenu"
+    >
+      <div class="text-lg lg:flex-grow"></div>
+      <div class="text-lg">
+        {{ range .Site.Menus.main }}
+        <a
+          href="{{ .URL | safeURL }}"
+          class="duration-200 block mt-4 lg:inline-block lg:mt-0 text-black hover:opacity-60 mr-8"
+        >
+          {{ .Name }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </nav>
 </header>
